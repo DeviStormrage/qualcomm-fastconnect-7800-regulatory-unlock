@@ -37,7 +37,7 @@ This PowerShell script automatically:
 
 ```powershell
 # Clone
-git clone https://github.com/thangnt4411/fix-china-wifi-regulatory.git
+git clone https://github.com/DeviStormrage/fix-china-wifi-regulatory.git
 cd fix-china-wifi-regulatory
 
 # Run (must be Administrator)
@@ -88,4 +88,4 @@ The script switches the registry pointers from the China firmware to the Global 
 
 ## Author
 
-[thangnt4411](https://github.com/thangnt4411) — generated with Hermes Agent (Nous Research).
+[DeviStormrage](https://github.com/DeviStormrage) — generated with Hermes Agent (Nous Research).
