@@ -41,8 +41,8 @@ This PowerShell script automatically:
 
 ```powershell
 # Clone
-git clone https://github.com/DeviStormrage/fix-china-wifi-regulatory.git
-cd fix-china-wifi-regulatory
+git clone https://github.com/DeviStormrage/qualcomm-fastconnect-7800-regulatory-unlock.git
+cd qualcomm-fastconnect-7800-regulatory-unlock
 
 # Run (must be Administrator)
 Right-click Fix-ChinaWifiRegulatory.ps1 → "Run with PowerShell"
