@@ -1,0 +1,10 @@
+# Backup files
+*.reg
+
+# PowerShell temporary files
+*.ps1xml
+*.psess
+
+# Windows temp files
+Thumbs.db
+Desktop.ini
