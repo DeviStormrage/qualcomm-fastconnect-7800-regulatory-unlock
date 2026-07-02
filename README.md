@@ -1,5 +1,9 @@
 # Fix China WiFi Regulatory Domain
 
+**⚠️ Important: This script targets only Qualcomm FastConnect 7800 (WCN785x) WiFi cards found in Chinese-region laptops. It does NOT work with Intel, Realtek, Broadcom, or MediaTek adapters.**
+
+---
+
 Unblock 5GHz channels (36–64, 100–144) on **Chinese-region laptops** with **Qualcomm FastConnect 7800 (WCN785x)** WiFi cards.
 
 ## The Problem
@@ -50,7 +54,7 @@ powershell -ExecutionPolicy Bypass -File .\Fix-ChinaWifiRegulatory.ps1
 ### Requirements
 
 - Windows 10 or 11
-- Qualcomm FastConnect 7800 (WCN785x / QCNCM865) WiFi card
+- **Qualcomm FastConnect 7800 (WCN785x / QCNCM865)** WiFi card only
 - Administrator privileges
 
 ### Rollback
@@ -82,10 +86,20 @@ Qualcomm FastConnect 7800 cards have a **self-managed regulatory domain** — th
 
 The script switches the registry pointers from the China firmware to the Global firmware, then tells the driver to use the global regulatory table.
 
+## Limitations
+
+| Feature | Supported? |
+|---------|-----------|
+| Qualcomm FastConnect 7800 (WCN785x) | ✅ Tested on Lenovo ThinkBook / Yoga |
+| Other Qualcomm adapters (QCA9377, QCA61x4) | ❌ May have different registry keys |
+| Intel WiFi adapters | ❌ Uses different regulatory mechanism |
+| Realtek WiFi adapters | ❌ Uses different regulatory mechanism |
+| Broadcom / MediaTek adapters | ❌ Not supported |
+
 ## Disclaimer
 
 **Use at your own risk.** While tested on actual hardware (Lenovo laptop with FastConnect 7800), modifying firmware pointers in the registry may cause instability on some configurations. The script creates a full backup before making changes so you can always roll back.
 
 ## Author
 
-[DeviStormrage](https://github.com/DeviStormrage) — generated with Hermes Agent (Nous Research).
+[DeviStormrage](https://github.com/DeviStormrage)
